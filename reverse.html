@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title</title>
+<script>
+function Reverse()
+{
+	var num=document.frm2.name.value;
+	var rev=0;
+	var temp=num;
+    while(num!=0)
+    {
+       rev=rev*10;
+       rev=rev+num%10;
+        num=num/10;
+    }
+    alert(rev);
+    alert(temp);
+}
+</script>
+</head>
+<body>
+<form name="frm2">
+<input type="text" name="name" value=""><br>
+</form>
+<button onclick="Reverse()">reverse</button>
+</body>
+</html>

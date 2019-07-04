@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>divisors</title>
+<script>
+function Divisors()
+{
+	var i;
+	var n=document.frm.name.value;
+	for(i=0;i<n;i++)
+		{
+		if(i%n==0)
+			{
+			document.writeln(i);
+			continue;
+			}
+		}
+}	
+</script>
+</head>
+<body>
+<form name="frm">
+number <input type="text" name="name" value=""><br>
+</form>
+<button onclick="Divisors()">divisors</button>
+</body>
+</html>
